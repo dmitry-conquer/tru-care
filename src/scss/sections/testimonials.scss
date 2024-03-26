@@ -21,6 +21,7 @@
       background-color: #efefef;
       border: 2px solid $gray-300;
       opacity: 0.7;
+      flex-shrink: 0;
     }
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background-color: $primary-300;

@@ -5,11 +5,23 @@
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 // @import '../../node_modules/aos/src/sass/aos.scss';
 
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap');
-@import './utils/functions', './utils/variables', './utils/mixins', './ui/buttons', './ui/headings', './ui/gradients';
-@import 'header', 'footer';
-@import 'sections/main-hero', 'sections/testimonials';
+
+/* Normalize */
 @import 'normalize';
+
+/* Helpers */
+@import './utils/functions', './utils/variables', './utils/mixins', './ui/buttons', './ui/headings', './ui/gradients';
+
+/* Template parts */
+@import 'header', 'footer';
+
+/* Sections */
+@import 'sections/main-hero', 'sections/testimonials', 'sections/instagram';
+
+/* Pages */
+@import 'pages/homepage';
 
 html {
   scroll-behavior: smooth;
@@ -38,6 +50,10 @@ body {
   height: 1px;
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 // >> - - - - - - - - - - - - - [current project styles] - - - - - - - - - - - - - - - - -

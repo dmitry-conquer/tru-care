@@ -1,0 +1,55 @@
+.standout {
+  @include av('padding-top', 106, 60); // change pt
+  @include av('padding-bottom', 145, 60); // change pb
+  &__container {
+  }
+  &__title {
+    margin-bottom: 77px;
+  }
+  &__content {
+  }
+}
+
+.row-halfround {
+  display: flex;
+  column-gap: 85px;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 47px;
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    .row-halfround__image {
+      border-right: 18px solid $primary-300;
+      border-radius: 166.5px 0 0 166.5px;
+    }
+  }
+  &:nth-child(odd) {
+    .row-halfround__image {
+      border-left: 18px solid $primary-300;
+      border-radius: 0 166.5px 166.5px 0;
+    }
+  }
+  &__image {
+    overflow: hidden;
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+  }
+  &__title {
+    color: $gray-100;
+    @include av('font-size', 30, 24); //change fz
+    font-weight: 700;
+    margin-bottom: 29px;
+  }
+  &__text {
+    color: $gray-100;
+    @include av('font-size', 20, 16); //change fz
+    line-height: 1.4;
+  }
+}
