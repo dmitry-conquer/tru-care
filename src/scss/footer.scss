@@ -1,0 +1,113 @@
+.footer {
+  @include av('padding-top', 110, 30); // change pt
+  @include av('padding-bottom', 44, 20); // change pb
+  background-color: $primary-300;
+  &__inner {
+    max-width: 1302px;
+    padding: $container-padding + px;
+    margin: 0 auto;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 279px 1fr 276px;
+    column-gap: 113px;
+    margin-bottom: 40px;
+  }
+  &__address {
+    color: #fff;
+    @include av('font-size', 25, 18); // change fz
+    font-weight: 600;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__logo-img {
+    width: 276px;
+    height: 89px;
+  }
+  &__socials-list {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+  }
+  &__socials-link {
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__socials-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+  }
+  &__copyright {
+    color: #ffffff;
+    @include av('font-size', 18, 16); // change fz
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+.subscribe-form {
+  @include av('margin-bottom', 96, 40); // change mb
+  &__title {
+    color: #fff;
+    @include av('font-size', 35, 24); // change fz
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  &__input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 17px 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: border-color 0.3s ease;
+    &:focus {
+      border: 1px solid #249fcd;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__button {
+  }
+}
+.footer-nav {
+  &__title {
+    color: #fff;
+    @include av('font-size', 25, 18); // change fz
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 11px;
+  }
+  &__list {
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+  &__link {
+    color: #fff;
+    @include av('font-size', 18, 16); // change fz
+    font-weight: 500;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

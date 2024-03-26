@@ -1,0 +1,29 @@
+.primary-button {
+  color: #fff;
+  border-radius: 33.5px;
+  background: linear-gradient(90deg, rgb(36, 159, 205), rgb(133, 189, 230) 98.658%);
+  line-height: 1.6;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  &_sm {
+    height: 40px;
+    padding: 0 31px 0 31px;
+    @include av('font-size', 18, 16); // change fz!
+  }
+  &_md {
+    height: 62px;
+    padding: 0 65px 0 65px;
+    @include av('font-size', 25, 20); // change fz!
+  }
+  &_lg {
+    height: 67px;
+    padding: 0 40px 0 40px;
+    @include av('font-size', 25, 20); // change fz!
+  }
+}

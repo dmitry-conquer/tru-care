@@ -1,0 +1,35 @@
+.title {
+  @include av('font-size', 50, 32); // change fz!
+  font-weight: 700;
+  &_primary {
+    color: $primary-300;
+    span {
+      color: $gray-200;
+    }
+  }
+  &_secondary {
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.title-lines {
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: $gray-100;
+  @include av('font-size', 45, 32); // change fz!
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: url("data:image/svg+xml;utf8,<svg width='260' height='6' viewBox='0 0 260 6' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <path d='M0 0L260 6L0 6L0 0Z' fill='Gainsboro' fill-opacity='1' fill-rule='nonzero'/> </svg>");
+    padding-bottom: 20px;
+  }
+  &::before {
+    content: url("data:image/svg+xml;utf8,<svg width='260' height='6' viewBox='0 0 260 6' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <path d='M0 0L260 6L0 6L0 0Z' fill='Gainsboro' fill-opacity='1' fill-rule='nonzero'/> </svg>");
+    padding-bottom: 25px;
+    transform: rotate(180deg);
+  }
+}

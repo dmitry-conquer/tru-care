@@ -1,0 +1,21 @@
+/* Real container template width */
+$container-layout-width: 1370;
+$container-padding: 16;
+
+/* Project container template width */
+$container-max-width: calc($container-layout-width + ($container-padding * 2));
+
+/* break-points */
+$xl: 1199.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 575.98px;
+
+/* Colors */
+$primary-100: #f1e4e4;
+$primary-200: #ffdede;
+$primary-300: #b24c5a;
+
+$gray-100: #75787b;
+$gray-200: #5a5a5a;
+$gray-300: #313131;

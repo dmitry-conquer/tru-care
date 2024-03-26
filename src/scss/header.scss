@@ -1,0 +1,56 @@
+.header {
+  background: #fff;
+  padding: 24px 0 18px 0;
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 255px;
+    height: 72px;
+    margin-right: auto;
+  }
+
+  &__button {
+    margin-right: 28px;
+  }
+  &__contacts {
+    padding-top: 15px;
+  }
+  &__contacts-label {
+    color: $gray-300;
+    @include av('font-size', 18, 14); // change fz
+    font-weight: 500;
+  }
+  &__contacts-link {
+    color: $primary-300;
+    @include av('font-size', 30, 24); // change fz
+    font-weight: 700;
+    line-height: lh(36, 30);
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.nav {
+  display: flex;
+  column-gap: 31px;
+  margin-right: 25px;
+  &__item {
+  }
+  &__link {
+    @include av('font-size', 18, 14); // change fz
+    font-weight: 500;
+    color: $gray-300;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $primary-300;
+    }
+  }
+}
