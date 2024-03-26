@@ -1,0 +1,47 @@
+.bottomsection {
+  @include av('padding-top', 100, 60);
+  &__under-inner {
+  }
+  &__container {
+    display: flex;
+    column-gap: 67px;
+  }
+  &__content {
+    position: relative;
+    z-index: 10;
+    flex: 0 1 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__image {
+    position: relative;
+    z-index: 10;
+    flex: 0 1 645px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__under {
+    @include av('padding-top', 82, 40);
+    @include av('padding-bottom', 60, 40);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-right: 80px;
+    transform: translateX(-50%) translateY(280px);
+    z-index: 10;
+    width: 100%;
+    max-width: 1542px;
+    border-radius: 279px;
+    background-color: $primary-300;
+  }
+}

@@ -31,9 +31,6 @@
      margin-bottom: 23px;
    }
    &__text {
-     color: $gray-300;
-     @include av('font-size', 20, 16); // chnage fz
-     line-height: 1.4;
      margin-bottom: 27px;
    }
    &__big-button {

@@ -1,0 +1,101 @@
+.light-gradient-bottom {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &_partly {
+    &::after {
+      background: linear-gradient(0deg, rgb(241, 228, 228) -4.777%, rgba(241, 228, 228, 0) 50%);
+    }
+  }
+  &_full {
+    &::after {
+      background: linear-gradient(0deg, rgb(241, 228, 228) -4.777%, rgba(241, 228, 228, 0.3) 220%);
+    }
+  }
+}
+
+.light-gradient-left {
+  position: relative;
+  &::after {
+    z-index: 13;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 2.277%, rgba(255, 255, 255, 0) 25%);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  @include av('font-size', 50, 32); // change fz!
+  font-weight: 700;
+  line-height: 1.2;
+  &_primary {
+    color: $primary-300;
+    span {
+      color: $gray-200;
+    }
+  }
+  &_secondary {
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.title-red-line {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  &::after {
+    content: url("data:image/svg+xml;utf8,<svg width='543' height='6' viewBox='0 0 543 6' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <path d='M0 0L543 6L0 6L0 0Z' fill='indianred' fill-opacity='1' fill-rule='nonzero'/> </svg>");
+  }
+}
+.title-lines {
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: $gray-100;
+  @include av('font-size', 45, 32); // change fz!
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: url("data:image/svg+xml;utf8,<svg width='260' height='6' viewBox='0 0 260 6' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <path d='M0 0L260 6L0 6L0 0Z' fill='Gainsboro' fill-opacity='1' fill-rule='nonzero'/> </svg>");
+    padding-bottom: 20px;
+  }
+  &::before {
+    content: url("data:image/svg+xml;utf8,<svg width='260' height='6' viewBox='0 0 260 6' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <path d='M0 0L260 6L0 6L0 0Z' fill='Gainsboro' fill-opacity='1' fill-rule='nonzero'/> </svg>");
+    padding-bottom: 25px;
+    transform: rotate(180deg);
+  }
+}
+.base-text {
+  color: $gray-200;
+  @include av('font-size', 20, 16); // chnage fz
+  line-height: 1.4;
+}

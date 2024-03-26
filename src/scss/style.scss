@@ -8,17 +8,19 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap');
 
-/* Normalize */
-@import 'normalize';
-
 /* Helpers */
-@import './utils/functions', './utils/variables', './utils/mixins', './ui/buttons', './ui/headings', './ui/gradients';
+@import './helpers/functions', './helpers/variables', './helpers/mixins';
+
+@import 'normalize', 'utilities';
+
+/* UI */
+@import './ui/buttons';
 
 /* Template parts */
 @import 'header', 'footer';
 
 /* Sections */
-@import 'sections/main-hero', 'sections/testimonials', 'sections/instagram';
+@import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection';
 
 /* Pages */
 @import 'pages/homepage';
@@ -40,23 +42,6 @@ body {
   max-width: $container-max-width + px;
 }
 
-.sr-only {
-  position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
-  clip: rect(0, 0, 0, 0);
-}
-
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-// >> - - - - - - - - - - - - - [current project styles] - - - - - - - - - - - - - - - - -
 .wrapper {
   display: flex;
   flex-direction: column;
