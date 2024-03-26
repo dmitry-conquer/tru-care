@@ -1,0 +1,32 @@
+.rounded-block {
+  &__container {
+    position: relative;
+    background-color: $primary-200;
+    border-radius: 0 99px 99px 0;
+    overflow: hidden;
+    display: flex;
+    padding: 0 !important;
+  }
+  &__image {
+    flex: 0 1 43%;
+  }
+  &__content {
+    flex: 0 1 auto;
+    padding: 84px 120px 100px 100px;
+    z-index: 10;
+    position: relative;
+  }
+  &__title {
+    color: $gray-200;
+    @include av('font-size', 40, 32);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+  }
+  &__logo {
+    position: absolute;
+    right: 47px;
+    bottom: 57px;
+  }
+}

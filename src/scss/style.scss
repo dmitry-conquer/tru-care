@@ -20,10 +20,11 @@
 @import 'header', 'footer';
 
 /* Sections */
-@import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection';
+@import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection', 'sections/hero', 'sections/hero-info', 'sections/rounded-block',
+  'sections/half-gradient', 'sections/request-call';
 
 /* Pages */
-@import 'pages/homepage';
+@import 'pages/homepage', 'pages/about-page';
 
 html {
   scroll-behavior: smooth;

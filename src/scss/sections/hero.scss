@@ -1,0 +1,41 @@
+.hero {
+  @include av('padding-top', 128, 60);
+  @include av('padding-bottom', 128, 60);
+  margin-bottom: 64px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+  height: 513px;
+  overflow: hidden;
+  &__round {
+    background-color: $primary-300;
+    border-radius: 0px 256.86px 256.86px 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 58%;
+    top: 0;
+  }
+  &__content {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__text {
+    color: #fff;
+    @include av('font-size', 20, 16);
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__button {
+  }
+}

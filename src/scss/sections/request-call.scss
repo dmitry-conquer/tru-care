@@ -1,0 +1,26 @@
+.request-call {
+   @include av('padding-top', 73, 50);
+  &__inner {
+    max-width: 1182px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__text-info {
+    color: #000;
+    @include av('font-size', 25, 18);
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  &__text-main {
+    color: #000;
+    @include av('font-size', 35, 24);
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+  &__button {
+  }
+}

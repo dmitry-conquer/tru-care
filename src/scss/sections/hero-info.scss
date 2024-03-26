@@ -1,0 +1,19 @@
+.hero-info {
+   margin-bottom: 76px;
+  &__inner {
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+  &__title {
+  }
+  &__sub-title {
+    color: $gray-200;
+    @include av('font-size', 35, 24);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__text {
+  }
+}

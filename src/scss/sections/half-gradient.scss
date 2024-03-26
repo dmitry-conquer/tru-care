@@ -1,0 +1,25 @@
+.half-gradient {
+  display: flex;
+  position: relative;
+  @include av('padding-top', 92, 50);
+  @include av('padding-bottom', 140, 50);
+  &__image {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__dec {
+    width: 70%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+  }
+}
