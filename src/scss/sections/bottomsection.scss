@@ -5,43 +5,70 @@
   &__container {
     display: flex;
     column-gap: 67px;
+    row-gap: 42px;
+    @media (max-width: ($xl)) {
+      flex-direction: column;
+    }
   }
   &__content {
     position: relative;
     z-index: 10;
-    flex: 0 1 560px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media (min-width: ($xl)) {
+      flex: 0 1 560px;
+    }
   }
   &__title {
     margin-bottom: 25px;
+    @media (max-width: ($xl)) {
+      margin-bottom: 17px;
+    }
   }
   &__text {
     margin-bottom: 30px;
+    @media (max-width: ($xl)) {
+      margin-bottom: 20px;
+    }
   }
   &__image {
     position: relative;
     z-index: 10;
-    flex: 0 1 645px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    margin: 0 auto;
+    @media (min-width: ($xl)) {
+      flex: 0 1 645px;
+    }
+    @media (max-width: ($xl)) {
+      margin-bottom: -130px !important;
+    }
+    @media (max-width: ($sm)) {
+      margin-bottom: -100px !important;
+      img {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
   &__under {
     @include av('padding-top', 82, 40);
     @include av('padding-bottom', 60, 40);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding-right: 80px;
     transform: translateX(-50%) translateY(280px);
     z-index: 10;
     width: 100%;
-    max-width: 1542px;
-    border-radius: 279px;
     background-color: $primary-300;
+    @media (min-width: ($xl)) {
+      border-radius: 279px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      @include av('padding-right', 80, 0);
+      max-width: 1542px;
+    }
+    @media (max-width: ($xl)) {
+      position: relative;
+      transform: translateY(0);
+    }
   }
 }

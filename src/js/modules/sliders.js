@@ -18,27 +18,16 @@ const initSliders = () => {
         clickable: true,
       },
 
-      // Breakpoints
-      /*
-         breakpoints: {
-            320: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            576: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            768: {
-               slidesPerView: 2,
-               spaceBetween: 20,
-            },
-            992: {
-               slidesPerView: 3,
-               spaceBetween: 20,
-            },
-         },
-         */
+      breakpoints: {
+        320: {
+          spaceBetween: 10,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
+        },
+        992: {
+          spaceBetween: 21,
+        },
+      },
     });
   }
 };

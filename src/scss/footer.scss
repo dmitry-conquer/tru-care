@@ -1,6 +1,6 @@
 .footer {
-  @include av('padding-top', 110, 30); // change pt
-  @include av('padding-bottom', 44, 20); // change pb
+  @include av('padding-top', 110, 20);
+  @include av('padding-bottom', 44, 69);
   background-color: $primary-300;
   &__inner {
     max-width: 1302px;
@@ -10,12 +10,15 @@
   &__body {
     display: grid;
     grid-template-columns: 279px 1fr 276px;
-    column-gap: 113px;
     margin-bottom: 40px;
+    @include av('column-gap', 113, 0);
+    @media (max-width: ($sm)) {
+      grid-template-columns: 1fr;
+    }
   }
   &__address {
     color: #fff;
-    @include av('font-size', 25, 18); // change fz
+    @include av('font-size', 25, 20);
     font-weight: 600;
     line-height: 1.6;
     transition: opacity 0.3s ease;
@@ -24,6 +27,20 @@
     }
   }
 
+  &__socials {
+    @media (max-width: ($xl)) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      margin-top: 68px;
+    }
+    @media (max-width: ($sm)) {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   &__logo-img {
     width: 276px;
     height: 89px;
@@ -48,25 +65,35 @@
   }
   &__copyright {
     color: #ffffff;
-    @include av('font-size', 18, 16); // change fz
+    @include av('font-size', 18, 17);
     font-weight: 500;
     line-height: 1.6;
     text-align: center;
   }
 }
 .subscribe-form {
-  @include av('margin-bottom', 96, 40); // change mb
+  @include av('margin-bottom', 96, 50);
   &__title {
     color: #fff;
-    @include av('font-size', 35, 24); // change fz
+    @include av('font-size', 35, 25);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 45px;
+    line-height: 1.2;
+    @media (max-width: ($sm)) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   &__body {
     display: flex;
     align-items: center;
     column-gap: 16px;
+    @media (max-width: ($md)) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 15px;
+    }
   }
   &__input {
     width: 100%;
@@ -86,9 +113,12 @@
   }
 }
 .footer-nav {
+  @media (max-width: ($sm)) {
+    margin-top: 30px;
+  }
   &__title {
     color: #fff;
-    @include av('font-size', 25, 18); // change fz
+    @include av('font-size', 25, 20);
     font-weight: 600;
     line-height: 1.6;
     margin-bottom: 11px;
@@ -102,7 +132,7 @@
   }
   &__link {
     color: #fff;
-    @include av('font-size', 18, 16); // change fz
+    @include av('font-size', 18, 17);
     font-weight: 500;
     line-height: 1.6;
     transition: opacity 0.3s ease;

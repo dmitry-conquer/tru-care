@@ -3,7 +3,7 @@
 // @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
 @import '../../node_modules/swiper/modules/pagination/pagination.scss';
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
-// @import '../../node_modules/aos/src/sass/aos.scss';
+@import '../../node_modules/aos/src/sass/aos.scss';
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap');
@@ -44,6 +44,10 @@ body {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 .wrapper {
   display: flex;
   flex-direction: column;

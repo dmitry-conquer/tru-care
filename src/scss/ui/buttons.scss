@@ -25,5 +25,9 @@
     height: 67px;
     padding: 0 50px 0 50px;
     @include av('font-size', 25, 20); // change fz!
+    @media (max-width: ($md)) {
+      height: 55px;
+      padding: 0 34px 0 34px;
+    }
   }
 }
