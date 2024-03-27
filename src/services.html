@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('template-parts/head.html', { 'title': 'Services' })
+  <body>
+    <div class="wrapper">
+      @@include('template-parts/header.html')
+      <main>
+        <section class="hero" style="background-image: url('./img/services/hero.webp')">
+          <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title title title_secondary">HOME HEALTH CARE SERVICES</h1>
+              <p class="hero__text">TruCare Home Care is a women-owned and family-operated business in Philadelphia area</p>
+              <a href="#" class="hero__button primary-button primary-button_lg">Request Care</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero-info">
+          <div class="hero-info__inner">
+            <h2 class="hero-info__sub-title">
+              The owners of TruCare have been in the healthcare industry for over 15 years and possess vast experience in Adult Day Care and homecare services.
+            </h2>
+            <p class="hero-info__text base-text">
+              Personal experience in caring for their loved ones was a primary motivator for starting the business and for wanting to make a difference in the way quality home
+              healthcare is delivered to their clients. TruCare was built upon the timeless values of compassion and care – The satisfaction and well-being of clients is at the
+              heart of all we do.
+            </p>
+          </div>
+        </section>
+
+        <section class="services-list">
+          <div class="services-list__container">
+            <h2 class="services-list__title title title_primary">Home Care Services <span>Do We Offer?</span></h2>
+            <div class="services-list__item item-services">
+              <img src="./img/services/img1.webp" alt="The staff at TruCare are dedicated to providing in-home care" class="item-services__image" />
+              <div class="item-services__content">
+                <div class="item-services__title-wrap">
+                  <img src="./img/icons/1.svg" alt="Personal Care" class="item-services__title-icon" />
+                  <h2 class="item-services__title-text">Personal Care</h2>
+                </div>
+                <p class="item-services__text base-text">
+                  Our dedicated home care providers help your loved one feel their best by assisting them with bathing, grooming, dressing, using the toilet, toothbrushing, hair
+                  brushing, and getting their makeup done
+                </p>
+              </div>
+              <img src="./img/trucare.svg" alt="trucare" class="item-services__logo" />
+            </div>
+            <div class="services-list__item item-services">
+              <img src="./img/services/img2.webp" alt="The staff at TruCare are dedicated to providing in-home care" class="item-services__image" />
+              <div class="item-services__content">
+                <div class="item-services__title-wrap">
+                  <img src="./img/icons/2.svg" alt="Personal Care" class="item-services__title-icon" />
+                  <h2 class="item-services__title-text">Personal Care</h2>
+                </div>
+                <p class="item-services__text base-text">
+                  Our dedicated home care providers help your loved one feel their best by assisting them with bathing, grooming, dressing, using the toilet, toothbrushing, hair
+                  brushing, and getting their makeup done
+                </p>
+              </div>
+              <img src="./img/trucare.svg" alt="trucare" class="item-services__logo" />
+            </div>
+            <div class="services-list__item item-services">
+              <img src="./img/services/img3.webp" alt="The staff at TruCare are dedicated to providing in-home care" class="item-services__image" />
+              <div class="item-services__content">
+                <div class="item-services__title-wrap">
+                  <img src="./img/icons/3.svg" alt="Personal Care" class="item-services__title-icon" />
+                  <h2 class="item-services__title-text">Personal Care</h2>
+                </div>
+                <p class="item-services__text base-text">
+                  Our dedicated home care providers help your loved one feel their best by assisting them with bathing, grooming, dressing, using the toilet, toothbrushing, hair
+                  brushing, and getting their makeup done
+                </p>
+              </div>
+              <img src="./img/trucare.svg" alt="trucare" class="item-services__logo" />
+            </div>
+          </div>
+        </section>
+
+        <section class="dedicated half-gradient">
+          <div class="half-gradient__image dedicated__image" style="background-image: url('./img/services/img8g.webp')"></div>
+          <div style="background-image: url('./img/bg-gradient.webp')" class="dedicated__dec half-gradient__dec"></div>
+          <div class="dedicated__container">
+            <div class="dedicated__content half-gradient__content">
+              <h2 class="dedicated__title">TruCare is dedicated to providing compassionate, quality in-home care services.</h2>
+              <p class="dedicated__text base-text">
+                We are helping our clients to live with dignity and respect, doing the things they enjoy in the safe and supportive environment of their community. We are proud to
+                help our clients maintain their independence in the environment that is most comforting to them – their home!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        @@include('template-parts/request-call.html')
+        <br />
+        @@include('template-parts/testimonials.html')
+        <br />
+        @@include('template-parts/instagram.html')
+      </main>
+      @@include('template-parts/footer.html')
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

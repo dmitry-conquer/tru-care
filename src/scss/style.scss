@@ -21,10 +21,10 @@
 
 /* Sections */
 @import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection', 'sections/hero', 'sections/hero-info', 'sections/rounded-block',
-  'sections/half-gradient', 'sections/request-call';
+  'sections/half-gradient', 'sections/request-call', 'sections/services-list';
 
 /* Pages */
-@import 'pages/homepage', 'pages/about-page';
+@import 'pages/homepage', 'pages/about-page', 'pages/services-page';
 
 html {
   scroll-behavior: smooth;
@@ -41,6 +41,7 @@ body {
   margin: 0 auto;
   padding: 0 $container-padding + px;
   max-width: $container-max-width + px;
+  width: 100%;
 }
 
 .wrapper {

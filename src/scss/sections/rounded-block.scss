@@ -9,6 +9,7 @@
   }
   &__image {
     flex: 0 1 43%;
+    object-fit: cover;
   }
   &__content {
     flex: 0 1 auto;

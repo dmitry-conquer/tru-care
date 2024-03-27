@@ -3,6 +3,14 @@
   position: relative;
   @include av('padding-top', 92, 50);
   @include av('padding-bottom', 140, 50);
+  &__content {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 30;
+  }
   &__image {
     width: 50%;
     position: absolute;
