@@ -1,4 +1,5 @@
 import initSliders from './modules/sliders.js';
+import header from './modules/header.js';
 // import { useDynamicAdapt } from './modules/dynamicAdapt.js';
 // import AOS from 'aos';
 // import fslightbox from 'fslightbox';
@@ -6,5 +7,6 @@ import initSliders from './modules/sliders.js';
 
 function app() {
   initSliders();
+  header();
 }
 document.addEventListener('DOMContentLoaded', app);

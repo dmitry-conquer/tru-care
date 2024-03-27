@@ -1,4 +1,4 @@
-@mixin av($property, $startSize, $minSize, $widthFrom: $container-max-width, $widthTo: 320) {
+@mixin av($property, $startSize, $minSize, $widthFrom: $container-max-width, $widthTo: 360) {
   $addSize: $startSize - $minSize;
   #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - #{$widthTo + px}) / #{($widthFrom) - ($widthTo)});
   @media (min-width: ($widthFrom + px)) {

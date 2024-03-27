@@ -4,7 +4,7 @@
       <img src="./img/logo-header.svg" alt="TruCare" />
     </a>
     <div class="header__body">
-      <nav class="header__nav">
+      <nav id="header-nav" class="header__nav">
         <ul class="nav">
           <li class="nav__item">
             <a href="services.html" class="nav__link">Services</a>
@@ -18,11 +18,36 @@
           <li class="nav__item">
             <a href="#" class="nav__link">Testimonials</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item menu-item-has-children">
             <a href="#" class="nav__link">Locations</a>
+            <ul class="nav__sub-menu">
+              <li class="nav__sub-item">
+                <a href="#">Our locations</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="#">New Reading, PA</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="#">New Montgomery</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="#">Chester County</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="#">Delaware County</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav__item">
+          <li class="nav__item menu-item-has-children">
             <a href="#" class="nav__link">Join Our Team</a>
+            <ul class="nav__sub-menu">
+              <li class="nav__sub-item">
+                <a href="#">Home care job</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="#">Office positions</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -32,5 +57,10 @@
         <a href="tel:610-878-2273" class="header__contacts-link">610-878-2273</a>
       </div>
     </div>
+    <button id="burger-button" aria-label="Open menu" class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
