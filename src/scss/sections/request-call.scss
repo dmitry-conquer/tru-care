@@ -1,5 +1,5 @@
 .request-call {
-   @include av('padding-top', 73, 50);
+   @include av('padding-top', 73, 61);
   &__inner {
     max-width: 1182px;
     margin: 0 auto;
@@ -11,15 +11,19 @@
   }
   &__text-info {
     color: #000;
-    @include av('font-size', 25, 18);
+    @include av('font-size', 25, 20);
     line-height: 1.4;
     margin-bottom: 16px;
+    @media (max-width: ($md)) {
+       margin-bottom: 21px;
+    }
   }
   &__text-main {
+    word-break: break-all;
     color: #000;
-    @include av('font-size', 35, 24);
+    @include av('font-size', 35, 30);
     line-height: 1.2;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
   &__button {
   }

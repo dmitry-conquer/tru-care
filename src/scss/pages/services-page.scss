@@ -1,8 +1,11 @@
 .dedicated {
   margin-top: 116px;
+  @media (max-width: ($md)) {
+     margin-top: 56px;
+  }
   &__title {
     color: $gray-200;
-    @include av('font-size', 40, 32);
+    @include av('font-size', 40, 30);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 31px;

@@ -1,20 +1,26 @@
 .families {
-  @include av('margin-top', 115, 60);
+  @include av('margin-top', 115, 54);
   &__container {
     width: 100%;
     position: relative;
     z-index: 50;
   }
+  &__dec {
+    left: -5%;
+    @media (max-width: ($xl)) {
+      left: 0;
+    }
+  }
   &__text {
     color: $gray-200;
-    @include av('font-size', 40, 32);
+    @include av('font-size', 40, 30);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 27px;
   }
   &__title {
     color: $primary-300;
-    @include av('font-size', 40, 32);
+    @include av('font-size', 40, 30);
     font-weight: 700;
     line-height: 1.2;
   }

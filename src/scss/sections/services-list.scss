@@ -4,6 +4,9 @@
   &__title {
     text-align: center;
     margin-bottom: 62px;
+    @media (max-width: ($md)) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -13,15 +16,20 @@
   overflow: hidden;
   display: grid;
   padding: 0 !important;
+  @media (max-width: ($md)) {
+    border-radius: 0 0 25px 25px;
+  }
   &:not(:last-child) {
     margin-bottom: 12px;
   }
   &:nth-child(even) {
     grid-template-columns: 45% 1fr;
-
     background-color: $primary-100;
+    @media (max-width: ($md)) {
+      grid-template-columns: 1fr;
+    }
     .item-services__logo {
-      right: 39px;
+      right: 21px;
     }
   }
   &:nth-child(odd) {
@@ -30,8 +38,17 @@
     background-color: $primary-200;
     flex-direction: row-reverse;
     border-radius: 99px 0 0 99px;
+    @media (max-width: ($md)) {
+      grid-template-columns: 1fr;
+      border-radius: 0 0 25px 25px;
+      direction: unset;
+    }
     .item-services__logo {
       left: 39px;
+      @media (max-width: ($md)) {
+        left: auto;
+        right: 21px;
+      }
     }
   }
   &__image {
@@ -44,21 +61,33 @@
     padding: 84px 120px 100px 100px;
     z-index: 10;
     position: relative;
+    @include av('padding-top', 84, 20);
+    @include av('padding-right', 120, 26);
+    padding-bottom: 100px;
+    @include av('padding-left', 100, 24);
   }
   &__title-wrap {
     display: flex;
     align-items: center;
     column-gap: 34px;
     margin-bottom: 23px;
+    @media (max-width: ($md)) {
+      column-gap: 10px;
+      margin-bottom: 10px;
+    }
   }
   &__title-icon {
     width: 48px;
     height: 48px;
     object-fit: contain;
+    @media (max-width: ($md)) {
+      width: 35px;
+      height: 35px;
+    }
   }
   &__title-text {
     color: $primary-300;
-    @include av('font-size', 40, 32);
+    @include av('font-size', 40, 25);
     font-weight: 700;
   }
   &__text {
@@ -68,5 +97,11 @@
     height: 88px;
     position: absolute;
     bottom: 40px;
+    object-fit: contain;
+    @media (max-width: ($md)) {
+      width: 60px;
+      height: 50px;
+      bottom: 25px;
+    }
   }
 }

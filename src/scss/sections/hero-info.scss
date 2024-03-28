@@ -1,5 +1,8 @@
 .hero-info {
    margin-bottom: 76px;
+   @media (max-width: ($sm)) {
+      margin-bottom: 50px;
+   }
   &__inner {
     max-width: 1256px;
     margin: 0 auto;
@@ -10,7 +13,7 @@
   }
   &__sub-title {
     color: $gray-200;
-    @include av('font-size', 35, 24);
+    @include av('font-size', 35, 25);
     font-weight: 700;
     margin-bottom: 10px;
   }

@@ -5,23 +5,28 @@
     <div class="wrapper">
       @@include('template-parts/header.html')
       <main>
-        <section class="hero" style="background-image: url('./img/about-page/hero.webp')">
-          <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
-          <div class="hero__container">
-            <div class="hero__content">
-              <h1 class="hero__title title title_secondary">ABOUT US</h1>
-              <p class="hero__text">Trucare Home Care Is a Women-Owned and Family-Operated Business Out of the Greater Philadelphia Area.</p>
-              <a href="#" class="hero__button primary-button primary-button_lg">Request Care</a>
+        <section class="hero">
+          <div class="hero__inner">
+            <img src="./img/about-page/hero.webp" alt="HOME HEALTH CARE SERVICES" class="hero__bg-image" />
+            <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
+            <div class="hero__container">
+              <div class="hero__content">
+                <h1 data-aos="fade-up" data-aos-delay="50" class="hero__title title title_secondary">ABOUT US</h1>
+                <p data-aos="fade-up" data-aos-delay="150" class="hero__text">
+                  Trucare Home Care Is a Women-Owned and Family-Operated Business Out of the Greater Philadelphia Area.
+                </p>
+                <a data-aos="fade-up" data-aos-delay="250" href="#" class="hero__button primary-button primary-button_lg">Request Care</a>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="hero-info">
           <div class="hero-info__inner">
-            <h2 class="hero-info__sub-title">
+            <h2 data-aos="fade-up" class="hero-info__sub-title">
               The owners of TruCare have been in the healthcare industry for over 15 years and possess vast experience in Adult Day Care and homecare services.
             </h2>
-            <p class="hero-info__text base-text">
+            <p data-aos="fade-up" data-aos-delay="100" class="hero-info__text base-text">
               Personal experience in caring for their loved ones was a primary motivator for starting the business and for wanting to make a difference in the way quality home
               healthcare is delivered to their clients. TruCare was built upon the timeless values of compassion and care – The satisfaction and well-being of clients is at the
               heart of all we do.
@@ -31,10 +36,12 @@
 
         <section class="rounded-block">
           <div class="rounded-block__container">
-            <img src="./img/about-page/img1.webp" alt="The staff at TruCare are dedicated to providing in-home care" class="rounded-block__image" />
+            <div class="rounded-block__image">
+              <img src="./img/about-page/img1.webp" alt="The staff at TruCare are dedicated to providing in-home care" />
+            </div>
             <div class="rounded-block__content">
-              <h2 class="rounded-block__title">The staff at TruCare are dedicated to providing compassionate, quality in-home care to our clients;</h2>
-              <p class="rounded-block__text base-text">
+              <h2 data-aos="fade-up" class="rounded-block__title">The staff at TruCare are dedicated to providing compassionate, quality in-home care to our clients;</h2>
+              <p data-aos="fade-up" class="rounded-block__text base-text">
                 enabling them to live with dignity and respect, doing the things they enjoy in the safe and supportive environment of their community. We are proud to help our
                 clients maintain their independence in the environment that is most comforting to them – their home!
               </p>
@@ -44,15 +51,15 @@
         </section>
 
         <section class="families half-gradient">
-          <div class="half-gradient__image families__image" style="background-image: url('./img/about-page/img2.webp')"></div>
+          <img src="./img/about-page/img2.webp" alt="TruCare" class="half-gradient__image families__image" />
           <div style="background-image: url('./img/bg-gradient.webp')" class="families__dec half-gradient__dec"></div>
           <div class="families__container">
             <div class="families__content half-gradient__content">
-              <p class="families__text">
+              <p data-aos="fade-up" class="families__text">
                 We are experienced in working with families who are low income, without insurance or with partial coverage, so we can ensure that you or a loved one gets the needed
                 care.
               </p>
-              <h2 class="families__title">TruCare is Medicaid certified, accredited by The Joint Commission and are licensed by the PA Dept of Health.</h2>
+              <h2 data-aos="fade-up" class="families__title">TruCare is Medicaid certified, accredited by The Joint Commission and are licensed by the PA Dept of Health.</h2>
             </div>
           </div>
         </section>
