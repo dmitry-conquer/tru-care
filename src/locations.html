@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('template-parts/head.html', { 'title': 'Locations' })
+  <body>
+    <div class="wrapper">
+      @@include('template-parts/header.html')
+      <main>
+        <section class="hero">
+          <div class="hero__inner">
+            <img src="./img/locations/hero.webp" alt="HOME HEALTH CARE SERVICES" class="hero__bg-image" />
+            <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
+            <div class="hero__container">
+              <div class="hero__content">
+                <h1 data-aos="fade-up" class="hero__title title title_secondary">Locations</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="locations-info">
+          <div class="locations-info__container">
+            <div class="locations-info__info">
+              <h2 data-aos="fade-up" data-aos-delay="150" class="locations-info__title">INTERESTED IN WORKING FOR A NATIONALLY-ACCREDITED HHA CERTIFIED HOME CARE PROVIDER?</h2>
+              <p data-aos="fade-up" class="locations-info__text base-text">
+                TruCare Home Care’s caregivers have the opportunity to make a significant difference in the lives of local families by placing the care back into home healthcare
+                services. With multiple locations throughout the greater Philadelphia region, TruCare is transforming the industry one patient at a time. 
+                <br /><br />
+                If you’re passionate about helping others and nurturing meaningful relationships, joining the TruCare Home Care team may be the right fit. TruCare Home Care is a
+                women-owned and family-operated business centered on providing compassionate in-home senior care in the Philadelphia area. 
+                <br /><br />
+                Recognized as the Best of Home Care Provider and Best of Home Care Employee of 2019 through 2022, TruCare strives to present the best care for each client and offer
+                our caregivers the support they need. Our facility offers adult day care services in addition to home health care services such as meal preparation, grooming,
+                mobility assistance, and transportation. Caregivers also provide meaningful companionship and can truly impact people’s lives.
+              </p>
+              <div data-aos="fade-up" class="locations-info__lists">
+                <ul class="locations-info__list">
+                  <li class="locations-info__item">Reading, PA</li>
+                  <li class="locations-info__item">Berks County</li>
+                  <li class="locations-info__item">Philadelphia</li>
+                  <li class="locations-info__item">Bucks County</li>
+                </ul>
+                <ul class="locations-info__list">
+                  <li class="locations-info__item">Delaware County</li>
+                  <li class="locations-info__item">Chester County</li>
+                  <li class="locations-info__item">Montgomery County</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map" style="background-image: url('./img/locations/map-bg.webp')">
+          <div class="map__container">
+            <h2 data-aos="fade-up" class="map__title map-title">TRUCARE HOME HEALTH CARE AGENCIES MAP:</h2>
+            <div class="map__gmap">MAP</div>
+            <p data-aos="fade-up" class="map__under map-title">WE SPEAK SPANISH, RUSSIAN, KOREAN AND ARE AVAILABLE 24/7.</p>
+          </div>
+        </section>
+
+        @@include('template-parts/request-call.html')
+        <br />
+        @@include('template-parts/testimonials.html')
+        <br />
+        @@include('template-parts/instagram.html')
+      </main>
+      @@include('template-parts/footer.html')
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

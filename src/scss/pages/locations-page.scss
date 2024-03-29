@@ -1,0 +1,52 @@
+.locations-info {
+  @include av('padding-bottom', 115, 66);
+  &__info {
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $gray-300;
+    @include av('font-size', 50, 30);
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 28px;
+  }
+  &__lists {
+    display: flex;
+    column-gap: 160px;
+    flex-wrap: wrap;
+  }
+  &__list {
+    padding-left: 20px;
+  }
+  &__item {
+    list-style: disc !important;
+    max-width: max-content;
+    color: $primary-300;
+    @include av('font-size', 35, 25);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
+.map {
+  @include av('padding-top', 82, 31);
+  @include av('padding-bottom', 115, 36);
+  &__container {
+  }
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__gmap {
+   text-align: center;
+  }
+  &__under {
+    margin-top: 70px;
+  }
+}
+
+.map-title {
+  color: $primary-300;
+  @include av('font-size', 35, 25);
+  font-weight: 700;
+  text-align: center;
+}
