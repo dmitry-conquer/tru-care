@@ -1,0 +1,305 @@
+.join-info {
+  @include av('padding-bottom', 97, 60);
+  &__container {
+  }
+  &__title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    @media (max-width: ($lg)) {
+      margin-bottom: 25px;
+    }
+  }
+  &__body {
+    display: flex;
+    column-gap: 55px;
+    align-items: center;
+    @media (max-width: ($lg)) {
+      flex-direction: column;
+      row-gap: 26px;
+    }
+  }
+  &__image {
+    border-radius: 30px;
+    width: 50%;
+    object-fit: cover;
+    @media (max-width: ($lg)) {
+      width: 100%;
+    }
+  }
+  &__content {
+    width: 50%;
+    @media (max-width: ($lg)) {
+      width: 100%;
+    }
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: $primary-300;
+    font-weight: 500;
+    line-height: 1.4;
+    @include av('font-size', 23, 20);
+  }
+}
+.join-desc {
+  &__inner {
+    @include av('padding-top', 96, 30);
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 20%;
+      background-color: #fff;
+      left: 0;
+      bottom: 0;
+      @media (max-width: ($md)) {
+        height: 80%;
+      }
+    }
+  }
+  &__container {
+    z-index: 10;
+    position: relative;
+  }
+  &__title {
+    color: $primary-300;
+    font-size: 35px;
+    @include av('font-size', 35, 25);
+    font-weight: 700;
+    margin-bottom: 47px;
+    text-align: center;
+    @media (max-width: ($sm)) {
+      margin-bottom: 16px;
+    }
+  }
+  &__content {
+    position: relative;
+    color: $gray-200;
+    border-radius: 31px 31px 0 0;
+    background-color: #fff;
+    padding: 67.5px 82.5px 50px 70px;
+    @media (max-width: ($lg)) {
+      padding: 34px 21px 10px 34px;
+    }
+    h3 {
+      @include av('font-size', 25, 20);
+      line-height: 1.4;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    h4 {
+      @include av('font-size', 20, 17);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 25px;
+    }
+    p {
+      @include av('font-size', 20, 17);
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+    ul {
+      padding-left: 28px;
+      margin-bottom: 25px;
+      li {
+        list-style: disc;
+        @include av('font-size', 20, 17);
+        line-height: 1.4;
+      }
+    }
+    dl {
+      display: flex;
+      dd,
+      dt {
+        @include av('font-size', 20, 17);
+        line-height: 1.4;
+        margin-right: 10px;
+      }
+      dt {
+        font-weight: 700;
+      }
+    }
+  }
+  &__content-image {
+    position: absolute;
+    right: 18px;
+    bottom: 127px;
+    @media (max-width: ($lg)) {
+      margin-top: 20px;
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__info {
+  }
+  &__info-container {
+    display: flex;
+    column-gap: 28px;
+    @media (max-width: ($lg)) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  &__locations {
+    border-radius: 30px;
+    background-color: $primary-100;
+    padding: 55px 45px 40px 51px;
+    flex: 0 1 418px;
+    @media (max-width: ($lg)) {
+      flex: 0 1 auto;
+    }
+    @media (max-width: ($md)) {
+      padding: 40px 42px 42px 36px;
+    }
+  }
+  &__locations-title {
+  }
+  &__info-title {
+    color: $primary-300;
+    @include av('font-size', 35, 25);
+    font-weight: 700;
+    margin-bottom: 25px;
+    @media (max-width: ($md)) {
+      margin-bottom: 18px;
+    }
+  }
+  &__locations-list {
+  }
+  &__locations-item {
+    line-height: 1.2;
+    color: $gray-200;
+    @include av('font-size', 25, 20);
+    font-weight: 700;
+  }
+  &__perks {
+    border-radius: 30px;
+    background-color: $primary-200;
+    padding: 55px 45px 40px 51px;
+    @media (max-width: ($md)) {
+      padding: 40px 42px 42px 36px;
+    }
+  }
+  &__perks-title {
+  }
+  &__perks-lists {
+    display: flex;
+    column-gap: 40px;
+    @media (max-width: ($sm)) {
+      flex-direction: column;
+    }
+  }
+  &__perks-list {
+    padding-left: 26px;
+    width: 50%;
+    @media (max-width: ($sm)) {
+      width: 100%;
+    }
+  }
+  &__perks-item {
+    list-style: disc;
+    color: $gray-200;
+    @include av('font-size', 25, 20);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
+
+.job-awards {
+  @include av('padding-top', 114, 45);
+  padding-bottom: 40px;
+  &__container {
+  }
+  &__header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+    @media (max-width: ($md)) {
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    color: $primary-300;
+    @include av('font-size', 35, 25);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    justify-content: center;
+    margin-bottom: 70px;
+    @include av('column-gap', 50, 10);
+    @media (max-width: ($md)) {
+      margin-bottom: 30px;
+    }
+  }
+  &__item {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__link {
+    text-align: center;
+    border-radius: 33.5px;
+    background: linear-gradient(90deg, rgb(36, 159, 205), rgb(133, 189, 230) 98.658%);
+    width: 100%;
+    max-width: 755px;
+    margin: 0 auto;
+    color: #fff;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 25px;
+    @include av('font-size', 25, 20);
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__row {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    @include av('margin-top', 121, 60);
+    @media (max-width: ($lg)) {
+      flex-direction: column;
+      row-gap: 35px;
+    }
+  }
+  &__row-video {
+    border-radius: 35px;
+    overflow: hidden;
+  }
+  &__row-video-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  &__row-content {
+    flex: 0 1 495px;
+    @media (max-width: ($lg)) {
+      flex: 0 1 auto;
+    }
+  }
+  &__row-title {
+    @include av('font-size', 20, 17);
+    line-height: 1.4;
+    font-weight: 500;
+    color: $primary-300;
+    margin-bottom: 20px;
+  }
+  &__row-text {
+    @include av('font-size', 20, 17);
+    line-height: 1.4;
+  }
+}
