@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('template-parts/head.html', { 'title': 'Testimonials' })
+  <body>
+    <div class="wrapper">
+      @@include('template-parts/header.html')
+      <main>
+        <section class="hero">
+          <div class="hero__inner">
+            <img src="./img/testimonials/hero.webp" alt="HOME HEALTH CARE SERVICES" class="hero__bg-image" />
+            <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
+            <div class="hero__container">
+              <div class="hero__content">
+                <h1 data-aos="fade-up" class="hero__title title title_secondary">TESTIMONIALS</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials-info">
+          <div class="testimonials-info__container">
+            <h2 data-aos="fade-up" data-aos-delay="150" class="testimonials-info__title">What Our <span>Clients & Caregivers</span> Say</h2>
+            <p data-aos="fade-up" class="testimonials-info__text base-text">
+              TruCare Homecare has served as Philadelphia’s trusted leader in the home healthcare industry for the past 15 years. Here are some positive testimonials about our home
+              care services, caregivers, and staff we have received from our clients over the years. To learn more about our services. Contact our agency at <a
+                href="tel:(610) 878-2273"
+                >(610) 878-2273</a
+              >
+            </p>
+          </div>
+        </section>
+
+        @@include('template-parts/testimonials-video.html')
+
+        <section class="testimonials-community half-gradient">
+          <img src="./img/testimonials/image.webp" alt="TruCare" class="half-gradient__image testimonials-community__image" />
+          <div style="background-image: url('./img/bg-gradient.webp')" class="testimonials-community__dec half-gradient__dec"></div>
+          <div class="testimonials-community__container">
+            <div class="testimonials-community__content half-gradient__content">
+              <h2 data-aos="fade-up" class="testimonials-community__title">In the Community</h2>
+              <p data-aos="fade-up" class="testimonials-community__text base-text">
+                TruCare has received three of Home Care Pulse’s 2022 Best of Homecare Awards for Pennsylvania including: 2022 Best of Home Care® Leader in Experience, 2022 Best of
+                Home Care® Provider of Choice, and 2022 Best of Home Care® Employer of Choice. TruCare Services also received Home Care Pulse’s 2022 Top 100 in Experience Award.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="request-call request-call_pb">
+          <div class="request-call__inner">
+            <p data-aos="fade-up" class="request-call__text-info font-roboto">
+              Learn more about TruCare Home Care and how we make a positive impact on our community and the well-being of seniors. Are you ready to discuss your loved one's needs?
+            </p>
+            <p data-aos="fade-up" class="request-call__text-main font-roboto">
+              Contact us to schedule a consultation. You can email us at <a href="#">Info@TruCareHomecare.com</a> or call us at <a href="#">833-878-2273</a>.
+            </p>
+            <a data-aos="fade-up" href="#" class="request-call__button primary-button primary-button_lg">Request Care</a>
+          </div>
+        </section>
+
+        <br />
+        @@include('template-parts/instagram.html')
+      </main>
+      @@include('template-parts/footer.html')
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

@@ -62,6 +62,7 @@
     "aos": "^2.3.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-prettier-airbnb": "^0.5.0",
+    "fslightbox": "^3.4.1",
     "micromodal": "^0.4.10",
     "terser-webpack-plugin": "^5.3.9"
   }

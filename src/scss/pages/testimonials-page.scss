@@ -1,0 +1,36 @@
+.testimonials-info {
+  &__container {
+    text-align: center;
+  }
+  &__title {
+    @include av('font-size', 50, 30);
+    font-weight: 700;
+    margin-bottom: 21px;
+    color: $gray-300;
+    span {
+      color: $primary-300;
+    }
+  }
+  &__text {
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: $primary-300;
+      }
+    }
+  }
+}
+
+.testimonials-community {
+  @include av('margin-top', 97, 40);
+  &__title {
+    margin-bottom: 40px;
+    color: $gray-100;
+    @include av('font-size', 40, 30);
+    font-weight: 700;
+    line-height: 1.2;
+    @media (max-width: ($lg)) {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import Swiper, { Pagination } from 'swiper';
 
-const initSliders = () => {
-  const testimonials = document.querySelector('.testimonials__slider');
-  if (testimonials) {
-    new Swiper(testimonials, {
+const testimonialsNodes = document.querySelectorAll('.testimonials__slider');
+testimonialsNodes.forEach(el => {
+  if (el) {
+    new Swiper(el, {
       modules: [Pagination],
 
       wrapperClass: 'testimonials__wrapper',
@@ -30,6 +30,4 @@ const initSliders = () => {
       },
     });
   }
-};
-
-export default initSliders;
+});
