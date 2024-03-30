@@ -1,7 +1,14 @@
 .testimonials {
-  @include av('padding-top', 106, 40); 
-  @include av('padding-bottom', 116, 40); 
-
+  @include av('padding-top', 106, 40);
+  @include av('padding-bottom', 116, 40);
+  &_py {
+    padding-top: 106px !important;
+    padding-bottom: 116px !important;
+    @media (max-width: ($lg)) {
+      padding-top: 40px !important;
+      padding-bottom: 60px !important;
+    }
+  }
   &__title {
     margin-bottom: 57px;
     @media (max-width: ($md)) {
@@ -10,7 +17,9 @@
   }
   &__slider {
     width: 100%;
-    @include av('height', 590, 360);
+    &_video {
+      @include av('height', 590, 360);
+    }
   }
   &__wrapper {
     display: flex;
