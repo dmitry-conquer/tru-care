@@ -22,6 +22,16 @@
   }
 }
 
+.pt-xl {
+  padding-top: 391px !important;
+  @media (max-width: ($xl)) {
+    padding-top: 90px !important;
+  }
+  @media (max-width: ($sm)) {
+    padding-top: 42px !important;
+  }
+}
+
 .light-gradient-left {
   position: relative;
   &::after {

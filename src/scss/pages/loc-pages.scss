@@ -1,0 +1,266 @@
+.hero-loc-info {
+  @include av('padding-top', 54, 21);
+  @include av('padding-bottom', 81, 30);
+  &_montgomery {
+    .hero-loc-info__title {
+      margin-bottom: 20px;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+}
+
+.reading-botttom {
+  position: relative;
+  @include av('margin-top', 129, 40);
+  padding-bottom: 230px;
+  @media (max-width: ($lg)) {
+    padding-bottom: 0;
+  }
+  &__under {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 165px;
+    @media (max-width: ($xl)) {
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: column-reverse;
+      padding-right: 0;
+      padding-bottom: 0;
+      row-gap: 30px;
+    }
+  }
+  &__image {
+    margin-bottom: -235px !important;
+    @media (max-width: ($sm)) {
+      margin-bottom: -140px !important;
+    }
+  }
+  &__under-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 890px;
+    @media (max-width: ($xl)) {
+      position: relative;
+    }
+    @media (max-width: ($sm)) {
+      width: 120%;
+      max-width: none;
+    }
+  }
+  &__under-content {
+    max-width: 512px;
+    position: relative;
+    z-index: 10;
+    @media (max-width: ($xl)) {
+      max-width: none;
+      padding: 0 16px;
+    }
+  }
+  &__under-subtitle {
+    color: #fff;
+    @include av('font-size', 25, 20);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  &__under-title {
+    color: #fff;
+    @include av('font-size', 40, 25);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__under-text {
+    color: #fff;
+    @include av('font-size', 20, 17);
+    line-height: 1.4;
+  }
+}
+
+.find-care {
+  @include av('margin-top', 123, 60);
+  @media (max-width: ($lg)) {
+    background-color: $primary-100;
+  }
+  &__image {
+  }
+  &__dec {
+    left: -11%;
+    width: 92%;
+    background-position: 100%;
+    @media (max-width: ($xl)) {
+      left: 0;
+    }
+    @media (max-width: ($lg)) {
+      display: none;
+    }
+  }
+  &__container {
+  }
+  &__content {
+  }
+  &__title {
+    @include av('font-size', 40, 25);
+    font-weight: 700;
+    margin-bottom: 36px;
+    line-height: 1.2;
+    span {
+      color: $primary-300;
+    }
+  }
+  &__text {
+  }
+}
+
+.grid {
+  @include av('padding-top', 93, 26);
+  &__inner {
+    max-width: 1183px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  &__header {
+    text-align: center;
+    @include av('margin-bottom', 75, 26);
+  }
+  &__title {
+    @include av('font-size', 40, 30);
+    margin-bottom: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    span {
+      color: $primary-300;
+    }
+  }
+  &__text {
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    grid-template-rows: repeat(2, 1fr);
+    @media (max-width: ($lg)) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.item-grid {
+  border-radius: 30px;
+  padding: 40px 42px 40px 46px;
+  position: relative;
+  &:nth-child(odd) {
+    background-color: $primary-100;
+  }
+  &:nth-child(even) {
+    background-color: $primary-200;
+  }
+  @media (max-width: ($lg)) {
+    padding: 33px 27px 30px 38px;
+  }
+  &__title {
+    color: #000;
+    @include av('font-size', 30, 24);
+    margin-bottom: 14px;
+  }
+  &__text {
+    position: relative;
+    z-index: 10;
+  }
+  &__icon {
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    width: 104px;
+    height: 88px;
+    object-fit: contain;
+    @media (max-width: ($sm)) {
+      width: 85px;
+      height: 72px;
+    }
+  }
+}
+
+.montgomery-bottom {
+  @include av('margin-top', 111, 45);
+  &__under {
+    margin-top: -100px;
+    padding: 48px 120px;
+    @media (max-width: ($xl)) {
+      padding: 48px 60px;
+    }
+    @media (max-width: ($lg)) {
+      padding: 35px 16px;
+    }
+    @media (max-width: ($sm)) {
+      margin-top: -50px;
+    }
+  }
+  &__under-row {
+    display: flex;
+    column-gap: 43px;
+    justify-content: center;
+    @media (max-width: ($lg)) {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+  }
+  &__under-content {
+    flex: 0 1 583px;
+    @media (max-width: ($lg)) {
+      flex: 0 1 auto;
+    }
+  }
+  &__under-title {
+    color: #fff;
+    @include av('font-size', 40, 35);
+    font-weight: 700;
+    margin-bottom: 23px;
+    @media (max-width: ($sm)) {
+      margin-bottom: 20px;
+    }
+  }
+  &__under-text {
+    color: #fff;
+    @include av('font-size', 20, 17);
+    line-height: 1.4;
+  }
+  &__under-list {
+  }
+  &__under-items {
+  }
+  &__under-item {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 6px 12px;
+    list-style: disc;
+    color: $gray-300;
+    @include av('font-size', 20, 17);
+    line-height: 1.5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    column-gap: 15px;
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+    &::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+  }
+}

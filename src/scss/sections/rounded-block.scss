@@ -35,6 +35,9 @@
     @include av('font-size', 40, 30);
     font-weight: 700;
     margin-bottom: 20px;
+    span {
+      color: $primary-300;
+    }
   }
   &__text {
   }

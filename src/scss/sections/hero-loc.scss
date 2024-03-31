@@ -1,0 +1,73 @@
+.hero-loc {
+  @include av('padding-top', 51, 30);
+  position: relative;
+  &_montgomery {
+    .hero-loc__content {
+      padding-top: 50px;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    @media (max-width: ($sm)) {
+      height: 20px;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    row-gap: 28px;
+    position: relative;
+    z-index: 10;
+    @media (max-width: ($lg)) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 43%;
+    @media (max-width: ($lg)) {
+      flex: 0 1 auto;
+    }
+  }
+  &__title {
+    color: $primary-300;
+    @include av('font-size', 50, 32);
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  &__subtitle {
+    color: $primary-300;
+    @include av('font-size', 41, 30);
+    margin-bottom: 30px;
+    @media (max-width: ($md)) {
+      margin-bottom: 18px;
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+   
+    @media (max-width: ($md)) {
+      margin-bottom: 14px;
+    }
+  }
+  &__link {
+  }
+  &__image {
+    flex: 0 1 57%;
+    @media (max-width: ($lg)) {
+      flex: 0 1 auto;
+    }
+    @media (max-width: ($sm)) {
+      width: 120%;
+      max-width: none;
+    }
+  }
+}

@@ -21,10 +21,11 @@
 
 /* Sections */
 @import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection', 'sections/hero', 'sections/hero-info', 'sections/rounded-block',
-  'sections/half-gradient', 'sections/request-call', 'sections/services-list';
+  'sections/half-gradient', 'sections/request-call', 'sections/services-list', 'sections/hero-loc';
 
 /* Pages */
-@import 'pages/homepage', 'pages/about-page', 'pages/services-page', 'pages/blog-page', 'pages/locations-page', 'pages/join-us-page', 'pages/testimonials-page';
+@import 'pages/homepage', 'pages/about-page', 'pages/services-page', 'pages/blog-page', 'pages/locations-page', 'pages/join-us-page', 'pages/testimonials-page',
+  'pages/loc-pages';
 
 html {
   scroll-behavior: smooth;
