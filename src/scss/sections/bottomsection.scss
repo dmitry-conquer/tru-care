@@ -71,4 +71,16 @@
       transform: translateY(0);
     }
   }
+
+  &__list {
+    padding-left: 20px;
+    @include av('margin-bottom', 40, 25);
+  }
+  &__item {
+    list-style: disc;
+    color: $gray-200;
+    @include av('font-size', 20, 17);
+    font-weight: 700;
+    line-height: 1.4;
+  }
 }
