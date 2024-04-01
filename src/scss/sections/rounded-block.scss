@@ -1,5 +1,8 @@
 .rounded-block {
   padding: 0 16px;
+  &_delaware {
+    @include av('margin-bottom', 64, 40);
+  }
   &__container {
     position: relative;
     background-color: $primary-200;
