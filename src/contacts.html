@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('template-parts/head.html', { 'title': 'Contacts' })
+  <body>
+    <div class="wrapper">
+      @@include('template-parts/header.html')
+      <main>
+        <section class="hero">
+          <div class="hero__inner">
+            <img src="./img/testimonials/hero.webp" alt="HOME HEALTH CARE SERVICES" class="hero__bg-image" />
+            <div class="hero__round" style="background-image: url('./img/bg-2.webp')"></div>
+            <div class="hero__container">
+              <div class="hero__content">
+                <h1 data-aos="fade-up" class="hero__title title title_secondary">CONTACT US</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <div class="form__container">
+            <h2 data-aos="fade-up" data-aos-delay="150" class="form__tilte">We’re available for your needs <span>24 / 7</span></h2>
+            <div class="form__body form-body">
+              <div class="form-body__content-outer">
+                <div class="form-body__content">
+                  <h3 data-aos="fade-up" class="form-body__content-title">GET IN TOUCH</h3>
+                  <div class="form-body__form"></div>
+                </div>
+              </div>
+              <div class="form-body__right">
+                <h3 data-aos="fade-up" class="form-body__right-title">CONTACT US</h3>
+                <div class="form-body__right-list form-list">
+                  <div data-aos="fade-up" class="form-list__item">
+                    <img src="./img/icon1.svg" alt="Location" class="form-list__item-icon" />
+                    <p class="form-list__item-text">
+                      2860 DeKalb Pike, Suite 100 <br />
+                      East Norriton, PA 19401
+                    </p>
+                  </div>
+                  <div data-aos="fade-up" class="form-list__item">
+                    <img src="./img/icon2.svg" alt="Call" class="form-list__item-icon" />
+                    <div class="form-list__item-content">
+                      <p class="form-list__item-title">833-TRU-CARE</p>
+                      <a href="tel:" class="form-list__item-link">(833-878-2273)</a>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" class="form-list__item">
+                    <img src="./img/icon3.svg" alt="Call" class="form-list__item-icon" />
+                    <div class="form-list__item-content">
+                      <p class="form-list__item-title">610-TRU-CARE</p>
+                      <a href="tel:" class="form-list__item-link">(610-878-2273)</a>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" class="form-list__item">
+                    <img src="./img/icon4.svg" alt="Call" class="form-list__item-icon" />
+                    <a href="tel:" class="form-list__item-subtitle">610-878-2273</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="interested half-gradient">
+          <img src="./img/testimonials/image.webp" alt="TruCare" class="half-gradient__image interested__image" />
+          <div style="background-image: url('./img/bg-gradient.webp')" class="interested__dec half-gradient__dec"></div>
+          <div class="interested__container">
+            <div class="interested__content half-gradient__content">
+              <h2 data-aos="fade-up" class="interested__title">INTERESTED IN WORKING WITH US?</h2>
+              <p data-aos="fade-up" class="interested__text base-text">WE SEEK EMPLOYEES WHO ARE HARDWORKING, COMPASSIONATE AND DETERMINED TO GIVE THE BEST CARE.</p>
+              <a data-aos="fade-up" href="#" class="primary-button primary-button_lg">Our Careers</a>
+            </div>
+          </div>
+        </section>
+        @@include('template-parts/instagram.html')
+      </main>
+      @@include('template-parts/footer.html')
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>
