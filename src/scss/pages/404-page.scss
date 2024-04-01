@@ -1,0 +1,38 @@
+.not-found {
+  @include av('padding-top', 81, 11);
+  @include av('padding-bottom', 134, 43);
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__code {
+    color: $primary-300;
+    @include av('font-size', 363, 165);
+    font-weight: 700;
+    @media (max-width: ($sm)) {
+      margin-bottom: 11px;
+    }
+  }
+  &__title {
+    color: $gray-300;
+    font-family: Cabin;
+    @include av('font-size', 50, 30);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 44px;
+    @media (max-width: ($md)) {
+      margin-bottom: 27px;
+    }
+  }
+  &__link {
+    width: 100%;
+    max-width: 323px;
+    @media (max-width: ($sm)) {
+      max-width: 251px;
+    }
+  }
+}

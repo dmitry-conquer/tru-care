@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('template-parts/head.html', { 'title': '404' })
+  <body>
+    <div class="wrapper">
+      @@include('template-parts/header.html')
+      <main>
+        <section class="not-found" style="background-image: url('./img/404bg.webp')">
+          <div class="not-found__container">
+            <div class="not-found__code">404</div>
+            <h1 class="not-found__title">PAGE NOT FOUND</h1>
+            <p class="not-found__text base-text">We couldn’t find the page you were looking for.</p>
+            <a href="#" class="not-found__link primary-button primary-button_lg">Back to Homepage</a>
+          </div>
+        </section>
+      </main>
+      @@include('template-parts/footer.html')
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>
