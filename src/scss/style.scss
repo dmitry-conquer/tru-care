@@ -11,7 +11,7 @@
 /* Helpers */
 @import './helpers/functions', './helpers/variables', './helpers/mixins';
 
-@import 'normalize', 'utilities';
+@import 'normalize', 'utilities', 'modal';
 
 /* UI */
 @import './ui/buttons';
@@ -21,7 +21,7 @@
 
 /* Sections */
 @import 'sections/main-hero', 'sections/testimonials', 'sections/instagram', 'sections/bottomsection', 'sections/hero', 'sections/hero-info', 'sections/rounded-block',
-  'sections/half-gradient', 'sections/request-call', 'sections/services-list', 'sections/hero-loc';
+  'sections/half-gradient', 'sections/request-call', 'sections/services-list', 'sections/hero-loc', 'sections/post';
 
 /* Pages */
 @import 'pages/homepage', 'pages/about-page', 'pages/services-page', 'pages/blog-page', 'pages/locations-page', 'pages/join-us-page', 'pages/testimonials-page', 'pages/loc-pages',

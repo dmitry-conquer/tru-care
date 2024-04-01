@@ -1,0 +1,100 @@
+.single-post {
+  @include av('padding-top', 123, 32);
+  &__container {
+  }
+  &__header {
+    max-width: 1128px;
+    margin: 0 auto 21px auto;
+    @media (max-width: ($sm)) {
+      margin: 0 auto 9px auto;
+    }
+  }
+  &__title {
+    color: $primary-300;
+    @include av('font-size', 50, 30);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 42px;
+    @media (max-width: ($md)) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.labels {
+  display: flex;
+  justify-content: center;
+  column-gap: 23px;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+.label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.label-icon {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+.label-text {
+  color: $gray-200;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.single-thumbnail {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 45px;
+  @media (max-width: ($md)) {
+    margin-bottom: 25px;
+  }
+}
+
+.content-post {
+  color: $gray-200;
+  @include av('font-size', 20, 17);
+  line-height: 1.4;
+  p {
+   &:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+  p {
+    &:not(:last-child) {
+      @include av('margin-top', 33, 16);
+      @include av('margin-bottom', 33, 16);
+    }
+  }
+  h2 {
+    color: $primary-300;
+    @include av('font-size', 30, 25);
+    font-weight: 700;
+    @include av('margin-bottom', 33, 10);
+  }
+  img {
+    &:not(:last-child) {
+      margin: 25px 0;
+    }
+  }
+  ul {
+    padding-left: 20px;
+    &:not(:last-child) {
+      margin: 20px 0;
+    }
+    li {
+      list-style: disc;
+    }
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+      color: $primary-300;
+    }
+  }
+}
