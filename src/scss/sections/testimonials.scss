@@ -15,7 +15,6 @@
   }
   &__title {
     margin-bottom: 57px;
-    @include av('margin-bottom', start, end);
     @media (max-width: ($md)) {
       margin-bottom: 24px;
     }
