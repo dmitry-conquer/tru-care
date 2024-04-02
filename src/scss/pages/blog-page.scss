@@ -2,11 +2,8 @@
   &__container {
   }
   &__title {
-    margin-bottom: 60px;
+    @include av('margin-bottom', 90, 31);
     text-align: center;
-    @media (max-width: ($md)) {
-      margin-bottom: 31px;
-    }
   }
   &__posts {
     display: grid;

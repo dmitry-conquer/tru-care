@@ -22,7 +22,6 @@
 }
 
 .testimonials-community {
-  @include av('margin-top', 97, 40);
   &__title {
     margin-bottom: 40px;
     color: $gray-100;

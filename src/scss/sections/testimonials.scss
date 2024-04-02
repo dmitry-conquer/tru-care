@@ -9,10 +9,28 @@
       padding-bottom: 60px !important;
     }
   }
+  &__text {
+    text-align: center;
+    @include av('margin-bottom', 75, 35);
+  }
   &__title {
     margin-bottom: 57px;
+    @include av('margin-bottom', start, end);
     @media (max-width: ($md)) {
       margin-bottom: 24px;
+    }
+    &_hidden {
+      display: none;
+    }
+    &_video {
+      color: $primary-300;
+      @include av('font-size', 35, 25);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      @media (max-width: ($md)) {
+        margin-bottom: 17px;
+      }
     }
   }
   &__slider {

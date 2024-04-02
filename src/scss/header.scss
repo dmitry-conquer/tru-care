@@ -168,13 +168,19 @@
           }
         }
       }
+      &.is-open-pc {
+        .nav__sub-menu {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
       .nav__link {
         position: relative;
         display: flex;
         align-items: center;
         column-gap: 6px;
         @media (max-width: ($xl)) {
-           justify-content: space-between;
+          justify-content: space-between;
         }
         &::after {
           content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='black'><path stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /></svg>");

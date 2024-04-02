@@ -47,11 +47,14 @@
   }
   &__subtitle {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     color: $primary-300;
     font-weight: 500;
     line-height: 1.4;
     @include av('font-size', 23, 20);
+    @media (max-width: ($sm)) {
+       margin-bottom: 15px;
+    }
   }
 }
 .join-desc {
@@ -146,6 +149,7 @@
     }
   }
   &__info {
+    @include av('margin-top', 70, 0);
   }
   &__info-container {
     display: flex;
