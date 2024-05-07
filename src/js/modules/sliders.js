@@ -9,9 +9,11 @@ testimonialsNodes.forEach(el => {
       wrapperClass: 'testimonials__wrapper',
       slideClass: 'testimonials__slide',
 
-      slidesPerView: 'auto',
+    
       spaceBetween: 21,
       speed: 1200,
+      loop: true,
+      loopPreventsSlide: 4,
 
       pagination: {
         el: '.testimonials__pagination',
@@ -19,13 +21,24 @@ testimonialsNodes.forEach(el => {
       },
 
       breakpoints: {
-        320: {
+        0: {
           spaceBetween: 10,
-          centeredSlides: true,
-          centeredSlidesBounds: true,
+          slidesPerView: 1.2,
+        },
+        768: {
+          slidesPerView: 1.7,
         },
         992: {
           spaceBetween: 21,
+          slidesPerView: 2.2,
+        },
+        1170: {
+          spaceBetween: 21,
+          slidesPerView: 2.8,
+        },
+        1400: {
+          spaceBetween: 21,
+          slidesPerView: 3.2,
         },
       },
     });

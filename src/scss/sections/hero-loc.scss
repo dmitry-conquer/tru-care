@@ -62,6 +62,8 @@
   &__link {
   }
   &__image {
+    max-height: 400px;
+    object-fit: contain;
     flex: 0 1 57%;
     @media (max-width: ($lg)) {
       flex: 0 1 auto;

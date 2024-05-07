@@ -2,6 +2,7 @@
   @include av('padding-top', 73, 61);
   &_pb {
     @include av('padding-bottom', 73, 61);
+    padding-top: 0 !important;
   }
   &__inner {
     max-width: 1182px;

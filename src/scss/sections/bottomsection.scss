@@ -52,8 +52,8 @@
     }
   }
   &__under {
-    @include av('padding-top', 82, 40);
-    @include av('padding-bottom', 60, 40);
+    @include av('padding-top', 100, 40);
+    @include av('padding-bottom', 88, 40);
     transform: translateX(-50%) translateY(280px);
     z-index: 10;
     width: 100%;
@@ -63,7 +63,6 @@
       position: absolute;
       bottom: 0;
       left: 50%;
-      @include av('padding-right', 80, 0);
       max-width: 1542px;
     }
     @media (max-width: ($xl)) {

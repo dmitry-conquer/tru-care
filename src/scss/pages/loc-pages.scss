@@ -20,8 +20,11 @@
   position: relative;
   @include av('margin-top', 129, 40);
   padding-bottom: 230px;
-  @media (max-width: ($lg)) {
-    padding-bottom: 0;
+  &_xl {
+    padding-bottom: 260px;
+  }
+  @media (max-width: ($xl)) {
+    padding-bottom: 0 !important;
   }
   &__under {
     overflow: hidden;
@@ -58,7 +61,7 @@
     }
   }
   &__under-content {
-    max-width: 512px;
+    max-width: 530px;
     position: relative;
     z-index: 10;
     @media (max-width: ($xl)) {
@@ -128,10 +131,13 @@
     max-width: 1183px;
     padding: 0 16px;
     margin: 0 auto;
+    &_xl {
+      max-width: 1580px;
+    }
   }
   &__header {
     text-align: center;
-    @include av('margin-bottom', 75, 26);
+    @include av('margin-bottom', 45, 26);
   }
   &__title {
     @include av('font-size', 40, 30);
@@ -150,6 +156,15 @@
     gap: 16px;
     @media (max-width: ($lg)) {
       grid-template-columns: 1fr;
+    }
+    &_row {
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: ($xl)) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: ($sm)) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
@@ -210,12 +225,12 @@
   @include av('margin-top', 111, 45);
   &__under {
     margin-top: -100px;
-    padding: 48px 120px;
+    padding: 48px 120px !important;
     @media (max-width: ($xl)) {
-      padding: 48px 60px;
+      padding: 48px 60px !important;
     }
     @media (max-width: ($lg)) {
-      padding: 35px 16px;
+      padding: 35px 16px !important;
     }
     @media (max-width: ($sm)) {
       margin-top: -50px;
@@ -251,6 +266,10 @@
     line-height: 1.4;
   }
   &__under-list {
+    flex: 0 1 500px;
+    @media (max-width: ($lg)) {
+       flex: 0 1 auto;
+    }
   }
   &__under-items {
   }

@@ -1,4 +1,4 @@
-.single-post {
+.post-article {
   @include av('padding-top', 123, 32);
   &__container {
   }
@@ -46,6 +46,7 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: 45px;
+  max-height: 823px;
   @media (max-width: ($md)) {
     margin-bottom: 25px;
   }
@@ -59,22 +60,39 @@
    &:first-child {
       margin-top: 0 !important;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 20px;
-  }
-  p {
     &:not(:last-child) {
       @include av('margin-top', 33, 16);
       @include av('margin-bottom', 33, 16);
     }
+    img {
+      border-radius: 30px;
+    }
+  }
+  p:has(img) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
   }
   h2 {
     color: $primary-300;
     @include av('font-size', 30, 25);
     font-weight: 700;
     @include av('margin-bottom', 33, 10);
+    span {
+      font-weight: 700 !important;
+    }
+  }
+  h3, h4, h5 {
+    color: $gray-300;
+    @include av('font-size', 20, 18);
+    font-weight: 700;
+    @include av('margin-bottom', 33, 10);
+    span {
+      font-weight: 700 !important;
+    }
   }
   img {
     &:not(:last-child) {

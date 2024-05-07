@@ -7,10 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease;
-  &:hover {
-    opacity: 0.8;
-  }
+  transition: all 0.3s ease;
   &_sm {
     height: 40px;
     padding: 0 31px 0 31px;
@@ -30,4 +27,13 @@
       padding: 0 34px 0 34px;
     }
   }
+}
+
+.button-hover {
+  position: relative;
+  transition: all 0.4s ease !important;
+}
+.button-hover:hover {
+  box-shadow: 0 10px 20px -10px #1e96c8;
+  transform: translateY(-1px);
 }

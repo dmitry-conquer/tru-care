@@ -6,7 +6,7 @@
     padding-bottom: 116px !important;
     @media (max-width: ($lg)) {
       padding-top: 40px !important;
-      padding-bottom: 30px !important;
+      padding-bottom: 55px !important;
     }
   }
   &__text {
@@ -35,7 +35,6 @@
   &__slider {
     width: 100%;
     &_video {
-      @include av('height', 590, 360);
     }
   }
   &__wrapper {

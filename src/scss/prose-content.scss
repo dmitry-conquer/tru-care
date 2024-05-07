@@ -1,0 +1,58 @@
+.prose-content {
+  @include av('padding-top', 50, 20);
+  @include av('padding-bottom', 50, 20);
+  h1 {
+    @include av('font-size', 50, 30);
+    text-align: center;
+    color: $primary-300;
+    font-weight: 700;
+    @include av('margin-bottom', 40, 25);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    @include av('font-size', 24, 20);
+    color: $gray-300;
+    font-weight: 700;
+    margin: 35px 0;
+    @media (max-width: ($sm)) {
+      margin: 20px 0;
+    }
+  }
+
+  img {
+   width: 100%;
+    max-width: 900px;
+    margin: 20px 0;
+    border-radius: 30px;
+  }
+
+  p {
+    @include av('font-size', 20, 17);
+    color: $gray-300;
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+
+  a {
+    color: $primary-300;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul {
+    padding-left: 20px;
+    li {
+      @include av('font-size', 20, 17);
+      list-style-type: disc;
+      color: $gray-300;
+      line-height: 1.2;
+      &::marker {
+        color: $gray-300;
+      }
+    }
+  }
+}
