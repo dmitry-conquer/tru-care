@@ -8,17 +8,26 @@
     margin: 0 auto;
   }
   &__body {
-    display: grid;
-    grid-template-columns: 279px 1fr 276px;
+    align-items: flex-start;
     margin-bottom: 40px;
-    @include av('column-gap', 113, 0);
+    display: flex;
+    row-gap: 50px;
+    column-gap: 40px;
+    @media (max-width: ($xl)) {
+      flex-wrap: wrap;
+    }
+  }
+  &__addresses {
+    display: flex;
+    column-gap: 30px;
     @media (max-width: ($sm)) {
-      grid-template-columns: 1fr;
+      flex-wrap: wrap;
+      row-gap: 30px;
     }
   }
   &__address {
     color: #fff;
-    @include av('font-size', 25, 20);
+    @include av('font-size', 23, 20);
     font-weight: 600;
     line-height: 1.6;
     transition: opacity 0.3s ease;
@@ -27,20 +36,6 @@
     }
   }
 
-  &__socials {
-    @media (max-width: ($xl)) {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      margin-top: 68px;
-    }
-    @media (max-width: ($sm)) {
-      grid-column: auto;
-      grid-row: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
   &__logo-img {
     width: 276px;
     height: 89px;
@@ -113,9 +108,6 @@
   }
 }
 .footer-nav {
-  @media (max-width: ($sm)) {
-    margin-top: 30px;
-  }
   &__title {
     color: #fff;
     @include av('font-size', 25, 20);
